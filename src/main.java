@@ -12,14 +12,29 @@ class main {
             String start = scanner.nextLine();
             if(start == "y") {
                 User.start();
+            }else{
+                overview();
             }
         } else {
-            System.out.println("Wilt u uw overzicht zien?");
+            System.out.println("Wilt u uw tijd stoppen?");
             System.out.println("(y/n)");
-            String overview = scanner.nextLine();
-            if(overview == "y") {
-                //User.getOverview();
+            String stop = scanner.nextLine();
+            if(stop == "y") {
+                //User.stop();
+            } else {
+                overview();
             }
+        }
+    }
+
+    public void overview(){
+        System.out.println("Wilt u uw overzicht zien?");
+        System.out.println("(y/n)");
+        String overview = scanner.nextLine();
+        if(overview == "y") {
+            //User.overview();
+        } else {
+            main();
         }
     }
 }

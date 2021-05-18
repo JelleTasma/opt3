@@ -22,10 +22,6 @@ class main {
             }
         }
     }
-
-    public String gab(String terug) {
-        return terug;
-    }
 }
 
 class User {

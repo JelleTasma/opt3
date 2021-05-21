@@ -79,8 +79,14 @@ class User {
     public String getEmail(){return this.email;}
     public int getPhone(){return this.phone;}
     public static void overview(){
+        System.out.println("Losse uren:");
         for(Hour hour : hours) {
             System.out.println(hour.getHour() + " op " + hour.getDate());
+        }
+        System.out.println(" ");
+        System.out.println("Aantal uren einde maand:");
+        for(TotalHour total : totals) {
+            System.out.println(total.getHour() + " op " + total.getDate());
         }
     }
 }
@@ -90,6 +96,7 @@ class Hour {
     private String date;
     private static Timer timer = new Timer();
     private static int currentlyHour = 0;
+    private static int currentMonth = 0;
 
     public Hour(int hour, String date) {
         this.hour = hour;
@@ -114,13 +121,23 @@ class Hour {
     }
 
     public static void stop() {
+        Scanner scanner = new Scanner(System.in);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd");
         LocalDateTime now = LocalDateTime.now();
         String currentDate = dtf.format(now);
         new Hour(currentlyHour, currentDate);
         timer.cancel();
         timer = new Timer();
+        currentMonth += currentlyHour;
         currentlyHour = 0;
+        System.out.println("Wilt u de maand afsluiten?");
+        System.out.println("y/n");
+        String end = scanner.nextLine();
+        if(end.equals("y")){
+            new TotalHour(currentMonth, currentDate);
+            currentMonth = 0;
+            System.out.println("De maand is afgesloten!");
+        }
     }
 }
 
@@ -136,4 +153,5 @@ class TotalHour{
 
     public int getTotalHour(){return this.totalHour;}
     public String getDate(){return this.date;}
+    public int getHour(){return this.totalHour;}
 }

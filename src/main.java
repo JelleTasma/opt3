@@ -9,30 +9,27 @@ class main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Maak een keuze:");
+        System.out.println(" ");
         if(!started) {
-            System.out.println("Wilt u starten?");
-            System.out.println("(y/n)");
-            String start = scanner.nextLine();
-            if(start.equals("y")) {
-                Hour.start();
-                System.out.println("gelukt! Uw uren worden nu geklokt");
-                started = true;
-                main(args);
-            } else {
-                overview(args);
-            }
+            System.out.println("1. Starten");
         } else {
-            System.out.println("Wilt u stoppen?");
-            System.out.println("(y/n)");
-            String stop = scanner.nextLine();
-            if(stop.equals("y")) {
-                started = false;
-                Hour.stop();
-                overview(args);
-            } else {
-                overview(args);
-
-            }
+            System.out.println("2. Stoppen");
+        }
+        System.out.println("3. Overzicht");
+        System.out.println(" ");
+        System.out.println("Voer het getal in:");
+        Int chosen = scanner.nextInt();
+        scanner.nextLine();
+        if(chosen == 1){
+            start();
+        } else if (chosen == 2){
+            stop(args);
+        } else if(chosen == 3){
+            overview(args);
+        } else {
+            System.out.println("Verkeerde invoer!");
+            main(args);
         }
     }
 
@@ -46,6 +43,29 @@ class main {
             main(args);
         } else {
             main(args);
+        }
+    }
+
+    public static void start(){
+        System.out.println("Wilt u starten?");
+        System.out.println("(y/n)");
+        String start = scanner.nextLine();
+        if(start.equals("y")) {
+            Hour.start();
+            System.out.println("gelukt! Uw uren worden nu geklokt");
+            started = true;
+            main(args);
+        }
+    }
+
+    public static void stop(){
+        System.out.println("Wilt u stoppen?");
+        System.out.println("(y/n)");
+        String stop = scanner.nextLine();
+        if(stop.equals("y")) {
+            started = false;
+            Hour.stop();
+            overview(args);
         }
     }
 }
@@ -141,17 +161,6 @@ class Hour {
     }
 }
 
-class TotalHour{
-    private int totalHour;
-    private String date;
+class login{
 
-    public TotalHour(int totalHour, String date){
-        this.totalHour = totalHour;
-        this.date = date;
-        User.totals.add(this);
-    }
-
-    public int getTotalHour(){return this.totalHour;}
-    public String getDate(){return this.date;}
-    public int getHour(){return this.totalHour;}
 }

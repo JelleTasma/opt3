@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="opt3.Controller.MenuController">
+   <children>
+      <Button layoutX="250.0" layoutY="130.0" mnemonicParsing="false" onAction="#OnOverviewClick" text="Overzicht">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="230.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menuvenster">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="258.0" layoutY="194.0" mnemonicParsing="false" onAction="#OnManageClick" text="Beheer">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="250.0" layoutY="259.0" mnemonicParsing="false" onAction="#OnLogoutClick" text="Uitloggen">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

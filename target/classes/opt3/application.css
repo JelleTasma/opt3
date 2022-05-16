@@ -1,0 +1,17 @@
+@font-face {
+    font-family: stratum;
+    -fx-font-family: Arial;
+    src: url('stratum.ttf');
+}
+
+.table-view .column-header-background .label{
+    -fx-font-family: "Arial";
+}
+
+.table-view .table-cell{
+ 	-fx-font-family: "Arial";
+}
+
+.list-view{
+    -fx-font-family: "Arial";
+}

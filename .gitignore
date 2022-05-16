@@ -1,0 +1,13 @@
+*.class
+*.log
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.rar
+*.iml
+bin
+target
+build
+out
+.idea

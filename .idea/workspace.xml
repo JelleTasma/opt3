@@ -29,37 +29,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f0f6e1d-787d-43a4-ac9b-005bc3260915" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/AddController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/DetailController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/ManageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/MenuController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/OverviewController$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/OverviewController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/OverviewController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/RegisterController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/JavaApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/AbstractFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/Authentication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/AuthenticationNormal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/AuthenticationSimple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/Drill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/Truck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/normalUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/userFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Model/userTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/JavaFXAppTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -365,10 +335,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="258" y="109" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1652562310216" />
-    <state x="208" y="25" width="1024" height="819" key="SettingsEditor" timestamp="1652738336061">
+    <state x="208" y="25" width="1024" height="819" key="SettingsEditor" timestamp="1652739079348">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="208" y="25" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1652738336061" />
+    <state x="208" y="25" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1652739079348" />
     <state x="208" y="25" key="SettingsEditor/0.25.1440.813@0.25.1440.813" timestamp="1652000318289" />
     <state x="208" y="25" key="SettingsEditor/0.25.1440.814@0.25.1440.814" timestamp="1652003204296" />
     <state x="208" y="25" width="1024" height="819" key="SettingsEditor/0.25.1440.819@0.25.1440.819" timestamp="1652736037040" />

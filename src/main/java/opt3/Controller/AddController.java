@@ -164,7 +164,7 @@ public class AddController {
             }
         });
         load.setFont(Font.font("Arial"));
-        if (type.equals("Personenauto's") || type.equals("Vrachtwagen")) {
+        if (type.equals("Vrachtwagen")) {
 
             loadBox.getChildren().setAll(loadLabel, load);
             loadBox.setSpacing(10);

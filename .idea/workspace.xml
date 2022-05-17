@@ -30,6 +30,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8f0f6e1d-787d-43a4-ac9b-005bc3260915" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/AddController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../new" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
@@ -93,7 +94,7 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JavaApplication">
+  <component name="RunManager" selected="JUnit.JavaFXAppTest (1)">
     <configuration name="JavaApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="opt3.JavaApplication" />
       <module name="opt3" />
@@ -101,7 +102,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaFXAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JavaFXAppTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="opt3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JavaFXAppTest" />
@@ -110,10 +111,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JavaFXAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3" />
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.JavaFXAppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JavaFXAppTest.User_getUsernameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="opt3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JavaFXAppTest" />
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.JavaFXAppTest" />
       <option name="METHOD_NAME" value="User_getUsernameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -171,9 +181,11 @@
       <item itemvalue="Application.JavaApplication" />
       <item itemvalue="JUnit.JavaFXAppTest.User_getUsernameTest" />
       <item itemvalue="JUnit.JavaFXAppTest" />
+      <item itemvalue="JUnit.JavaFXAppTest (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JavaFXAppTest (1)" />
         <item itemvalue="JUnit.JavaFXAppTest" />
         <item itemvalue="JUnit.JavaFXAppTest.User_getUsernameTest" />
       </list>
@@ -274,39 +286,39 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="296" y="24" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1652712932663" />
-    <state x="75" y="130" width="1240" height="770" key="DiffContextDialog" timestamp="1652737937843">
+    <state x="75" y="130" width="1240" height="770" key="DiffContextDialog" timestamp="1652778991547">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="75" y="130" width="1240" height="770" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1652737937843" />
+    <state x="75" y="130" width="1240" height="770" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1652778991547" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.25.1440.819@0.25.1440.819" timestamp="1652735930832" />
-    <state width="1398" height="208" key="GridCell.Tab.0.bottom" timestamp="1652737325265">
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1652778642320">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="208" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1652737325265" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1652778642320" />
     <state width="1398" height="206" key="GridCell.Tab.0.bottom/0.25.1440.813@0.25.1440.813" timestamp="1652002045559" />
     <state width="1398" height="206" key="GridCell.Tab.0.bottom/0.25.1440.814@0.25.1440.814" timestamp="1652003174172" />
     <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1652736099806" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1652469832123" />
-    <state width="1398" height="208" key="GridCell.Tab.0.center" timestamp="1652737325264">
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1652778642319">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="208" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1652737325264" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1652778642319" />
     <state width="1398" height="206" key="GridCell.Tab.0.center/0.25.1440.813@0.25.1440.813" timestamp="1652002045557" />
     <state width="1398" height="206" key="GridCell.Tab.0.center/0.25.1440.814@0.25.1440.814" timestamp="1652003174171" />
     <state width="1398" height="260" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1652736099806" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1652469832122" />
-    <state width="1398" height="208" key="GridCell.Tab.0.left" timestamp="1652737325263">
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1652778642318">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="208" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1652737325263" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1652778642318" />
     <state width="1398" height="206" key="GridCell.Tab.0.left/0.25.1440.813@0.25.1440.813" timestamp="1652002045556" />
     <state width="1398" height="206" key="GridCell.Tab.0.left/0.25.1440.814@0.25.1440.814" timestamp="1652003174171" />
     <state width="1398" height="260" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1652736099806" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1652469832121" />
-    <state width="1398" height="208" key="GridCell.Tab.0.right" timestamp="1652737325264">
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1652778642320">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="208" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1652737325264" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1652778642320" />
     <state width="1398" height="206" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1652002045558" />
     <state width="1398" height="206" key="GridCell.Tab.0.right/0.25.1440.814@0.25.1440.814" timestamp="1652003174172" />
     <state width="1398" height="260" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1652736099806" />
@@ -335,10 +347,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="258" y="109" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1652562310216" />
-    <state x="208" y="25" width="1024" height="819" key="SettingsEditor" timestamp="1652739079348">
+    <state x="208" y="25" width="1024" height="819" key="SettingsEditor" timestamp="1652778951251">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="208" y="25" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1652739079348" />
+    <state x="208" y="25" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1652778951251" />
     <state x="208" y="25" key="SettingsEditor/0.25.1440.813@0.25.1440.813" timestamp="1652000318289" />
     <state x="208" y="25" key="SettingsEditor/0.25.1440.814@0.25.1440.814" timestamp="1652003204296" />
     <state x="208" y="25" width="1024" height="819" key="SettingsEditor/0.25.1440.819@0.25.1440.819" timestamp="1652736037040" />
@@ -350,10 +362,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="447" y="188" key="VcsDiffUtil.ChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1652713204940" />
-    <state x="200" y="119" width="1240" height="652" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1652737937843">
+    <state x="200" y="119" width="1240" height="652" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1652779507308">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="200" y="119" width="1240" height="652" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1652737937843" />
+    <state x="200" y="119" width="1240" height="652" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1652779507308" />
     <state x="200" y="110" width="1240" height="700" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.25.1440.819@0.25.1440.819" timestamp="1652735930832" />
     <state x="100" y="100" width="1240" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1652737456918">
       <screen x="0" y="0" width="1440" height="900" />

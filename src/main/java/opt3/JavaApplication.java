@@ -5,8 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
-import opt3.Model.Item;
-import opt3.Model.User;
+import opt3.Model.*;
 
 import java.io.IOException;
 
@@ -15,10 +14,15 @@ public class JavaApplication extends Application{
     @Override
     public void start(Stage stage) throws Exception
     {
-        User user = new User("q", "q", "test@live.nl",false);
-        User.users.add(user);
-        Item item = new Item("Auto", "Heeft een motor", 1200, false);
-        Item item2 = new Item("Boor", "Alleen voor hout", 1200, false);
+        ItemSort sort = new ItemSort("Auto", true, true, false, false, 50, 0, 0,0.01);
+        ItemSort sort1 = new ItemSort("Vrachtwagen", false, true ,true, false, 0, 0.10,0, 0.01);
+        ItemSort sort2 = new ItemSort("Boormachine", true, false, false, true, 5, 0 ,1, 0);
+        ItemSort.sorts.add(sort);
+        ItemSort.sorts.add(sort1);
+        ItemSort.sorts.add(sort2);
+        new AccountFactory().create("User");
+        Item item = new Item("Auto", "Benz", "Een hele snelle auto", 40000,  false, "Mercedes", 4000, 0, null);
+        Item item2 = new Item("Boormachine", "Turbo 2000", "Kan heel goed boren", 500,  false, "Marcito", 200, 0, "Speed");
         Item.items.add(item);
         Item.items.add(item2);
 

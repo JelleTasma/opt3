@@ -11,6 +11,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import opt3.JavaApplication;
+import opt3.Model.Account;
+import opt3.Model.Login;
 import opt3.Model.User;
 
 import java.io.IOException;
@@ -38,7 +40,7 @@ public class RegisterController {
         String username = usernameInput.getText();
         String password = passwordInput.getText();
         String email = emailInput.getText();
-        User user = new User(username, password, email, false);
-        User.users.add(user);
+        Account user = new User(username, password, email);
+        Login.users.add(user);
     }
 }

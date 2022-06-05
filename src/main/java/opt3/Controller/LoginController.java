@@ -5,7 +5,9 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.text.Font;
 import opt3.JavaApplication;
+import opt3.Model.Account;
 import opt3.Model.Login;
+import opt3.Model.Observer;
 import opt3.Model.User;
 
 import javafx.fxml.FXML;
@@ -36,10 +38,11 @@ public class LoginController {
     public void OnLoginButtonClick(ActionEvent event) throws IOException{
         String username = usernameInput.getText();
         String password = passwordInput.getText();
-        User user = Login.login(username, password);
+        Account user = Login.login(username, password);
         if (user != null) {
             if(!user.getLogedIn()) {
                 Stage stage = new Stage();
+                Observer.stages.add(stage);
                 AnchorPane root = FXMLLoader.load(JavaApplication.class.getResource("/opt3/Menu.fxml"));
                 Scene scene = new Scene(root);
                 stage.setUserData(user);

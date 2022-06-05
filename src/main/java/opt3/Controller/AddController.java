@@ -21,7 +21,7 @@ import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import javafx.scene.layout.VBox;
 
-public class AddController {
+public class AddController implements Observer {
 
     private static AnchorPane field;
 
@@ -42,6 +42,12 @@ public class AddController {
 
     @FXML
     public static void setAdd(ActionEvent event, String type, Stage stage){
+        ItemSort sort = null;
+        for (ItemSort s : ItemSort.sorts){
+            if(s.getName().equals(type)){
+                sort = s;
+            }
+        }
         Button back = new Button("Terug");
         back.setFont(Font.font("Arial"));
         back.setOnAction(e -> {
@@ -86,30 +92,29 @@ public class AddController {
         brandLabel.setFont(Font.font("Arial"));
         TextField brand = new TextField();
         brand.setFont(Font.font("Arial"));
-        if (type.equals("Personenauto's") || type.equals("Boormachines")) {
+        if (sort.getBrand()) {
             brandBox.getChildren().setAll(brandLabel, brand);
             brandBox.setSpacing(10);
         }
 
-        HBox drillTypeBox = new HBox();
-        Label drillTypeLabel = new Label("Type");
-        drillTypeLabel.setFont(Font.font("Arial"));
-        TextField drillType = new TextField();
-        drillType.setFont(Font.font("Arial"));
-        if (type.equals("Boormachines")) {
-            drillTypeBox.getChildren().setAll(drillTypeLabel, drillType);
-            drillTypeBox.setSpacing(10);
+        HBox itemTypeBox = new HBox();
+        Label itemTypeLabel = new Label("Type");
+        itemTypeLabel.setFont(Font.font("Arial"));
+        TextField itemType = new TextField();
+        itemType.setFont(Font.font("Arial"));
+        if (sort.getType()) {
+            itemTypeBox.getChildren().setAll(itemTypeLabel, itemType);
+            itemTypeBox.setSpacing(10);
         }
 
         HBox dayPriceBox = new HBox();
         Label dayPriceLabel = new Label("Dagprijs");
         dayPriceLabel.setFont(Font.font("Arial"));
         Text priceDay = new Text("0");
-        if (type.equals("Personenauto's")){
-                priceDay = new Text("50");
-        }
-        if (type.equals("Boormachines")){
-            priceDay = new Text("5");
+        if(sort.getDayPrice() != 0) {
+            priceDay = new Text("" + sort.getDayPrice());
+        } else {
+            priceDay = new Text("" + sort.getDL());
         }
         priceDay.setFont(Font.font("Arial"));
         priceDay.setDisable(true);
@@ -120,7 +125,7 @@ public class AddController {
         Label insuranceLabel = new Label("Verzekering");
         insuranceLabel.setFont(Font.font("Arial"));
         Text insurance = new Text("0");
-        if (type.equals("Boormachines")){
+        if (sort.getType()){
             insurance = new Text("1");
         }
         insurance.setFont(Font.font("Arial"));
@@ -131,20 +136,20 @@ public class AddController {
         HBox weightBox = new HBox();
         Label weightLabel = new Label("Gewicht in kg");
         weightLabel.setFont(Font.font("Arial"));
-        TextField weight = new TextField();
-        weight.textProperty().addListener( e -> {
-            if (type.equals("Vrachtwagen") || type.equals("Personenauto's")) {
+        TextField weight = new TextField("0");
+        ItemSort finalSort = sort;
+        weight.textProperty().addListener(e -> {
+            if (finalSort.getIW() != 0) {
                 Text newText = new Text();
                 if(!weight.getText().equals("")) {
-                    newText = new Text("" + (Integer.parseInt(weight.getText()) * 0.01));
+                    newText = new Text("" + (Integer.parseInt(weight.getText()) * finalSort.getIW()));
                 }
                 newText.setFont(Font.font("Arial"));
                 insuranceBox.getChildren().setAll(insuranceLabel, newText);
             }
         });
         weight.setFont(Font.font("Arial"));
-        if (type.equals("Personenauto's") || type.equals("Vrachtwagen")) {
-
+        if (sort.getWeight()) {
             weightBox.getChildren().setAll(weightLabel, weight);
             weightBox.setSpacing(10);
         }
@@ -152,19 +157,20 @@ public class AddController {
         HBox loadBox = new HBox();
         Label loadLabel = new Label("Laadgewicht in kg");
         loadLabel.setFont(Font.font("Arial"));
-        TextField load = new TextField();
+        TextField load = new TextField("0");
+        ItemSort fs = sort;
         load.textProperty().addListener( e -> {
-            if (type.equals("Vrachtwagen")) {
+            if (fs.getDL() != 0) {
                 Text newText = new Text();
                 if(!load.getText().equals("")){
-                    newText = new Text("" + (Integer.parseInt(load.getText()) * 0.10));
+                    newText = new Text("" + (Integer.parseInt(load.getText()) * fs.getDL()));
                 }
                 newText.setFont(Font.font("Arial"));
                 dayPriceBox.getChildren().setAll(dayPriceLabel, newText);
             }
         });
         load.setFont(Font.font("Arial"));
-        if (type.equals("Vrachtwagen")) {
+        if (sort.getLoad()) {
 
             loadBox.getChildren().setAll(loadLabel, load);
             loadBox.setSpacing(10);
@@ -177,18 +183,8 @@ public class AddController {
         add.setFont(Font.font("Arial"));
         add.setOnAction(e -> {
             Label success = new Label();
-            if (type.equals("Personenauto's")) {
-                Item.items.add(new Car(brand.getText(), Integer.parseInt(weight.getText()), name.getText(), description.getText(), Integer.parseInt(price.getText()), false));
-                success = new Label("Auto is toegevoegd! druk op terug om af te ronden");
-            }
-            if (type.equals("Vrachtwagen")) {
-                Item.items.add(new Truck(Integer.parseInt(load.getText()), Integer.parseInt(weight.getText()), name.getText(), description.getText(), Integer.parseInt(price.getText()), false));
-                success = new Label("Vrachtwagen is toegevoegd! druk op terug om af te ronden");
-            }
-            if (type.equals("Boormachines")) {
-                Item.items.add(new Drill(brand.getText(), drillType.getText(), name.getText(), description.getText(), Integer.parseInt(price.getText()), false));
-                success = new Label("Boormachine is toegevoegd! druk op terug om af te ronden");
-            }
+                Item.items.add(new Item(type, name.getText(), description.getText(), Double.parseDouble(price.getText()), false , brand.getText(), Integer.parseInt(weight.getText()), Integer.parseInt(load.getText()), itemType.getText()));
+                success = new Label(type + " is toegevoegd! druk op terug om af te ronden");
 
             success.setFont(Font.font("Arial"));
             success.setPadding(new Insets(20));
@@ -199,7 +195,7 @@ public class AddController {
 
 
         vbox.setPadding(new Insets(90, 100 , 100, 170));
-        vbox.getChildren().addAll(back, typeText, nameBox, descriptionBox, priceBox, brandBox, drillTypeBox, weightBox, loadBox, dayPriceBox, insuranceBox, addBox);
+        vbox.getChildren().addAll(back, typeText, nameBox, descriptionBox, priceBox, brandBox, itemTypeBox, weightBox, loadBox, dayPriceBox, insuranceBox, addBox);
         vbox.setSpacing(10);
         field.getChildren().addAll(vbox);
     }
@@ -217,5 +213,14 @@ public class AddController {
         text.setPadding(new Insets(20));
         root.getChildren().addAll(text);
         field = root;
+    }
+
+    @Override
+    public void update(ActionEvent e, String info) {
+        for(Stage stage : stages){
+            Alert success = new Alert(Alert.AlertType.WARNING,info);
+            Stage show = (Stage) success.getDialogPane().getScene().getWindow();
+            stage.setAlwaysOnTop(true);
+        }
     }
 }

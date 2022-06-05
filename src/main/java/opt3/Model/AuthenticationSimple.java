@@ -3,10 +3,9 @@ package opt3.Model;
 import java.util.ArrayList;
 
 class AuthenticationSimple extends Authentication{
-    private final ArrayList<User> users = User.getUsers();
     @Override
     public Boolean checkUsername(String username){
-        for (User user : users){
+        for (Account user : Login.users){
             if(user.getUsername().equals(username)){
                 return true;
             }

@@ -51,10 +51,7 @@ public class MenuController {
     @FXML
     public void OnLogoutClick(ActionEvent event) throws IOException {
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        AnchorPane root = FXMLLoader.load(JavaApplication.class.getResource("/opt3/Login.fxml"));
-        Scene scene = new Scene( root );
-        stage.setScene(scene);
-        stage.show();
+        stage.close();
         Object obj = stage.getUserData();
         User user = (User)obj;
         user.setLogedOut();

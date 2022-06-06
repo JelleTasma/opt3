@@ -1,5 +1,6 @@
 package opt3.Model;
 
+// Account factory is the factory for the accounts and creating a user or admin depending on the accountType variable
 public class AccountFactory implements AbstractFactory<Account>{
     @Override
     public Account create(String accountType){

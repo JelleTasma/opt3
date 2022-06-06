@@ -2,6 +2,7 @@ package opt3.Model;
 
 import java.util.ArrayList;
 
+// ItemSort class for creating and saving item sorts
 public class ItemSort {
     private String name;
     private boolean brand;
@@ -13,6 +14,7 @@ public class ItemSort {
     private double IV;
     private double IW;
 
+    // ArrayList for saving item sorts
     public static ArrayList<ItemSort> sorts = new ArrayList<ItemSort>();
 
     public ItemSort(String name, boolean brand, boolean weight, boolean load, boolean type, double dayPrice,  double DL, double IV, double IW){

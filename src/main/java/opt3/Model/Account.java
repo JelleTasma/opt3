@@ -1,5 +1,6 @@
 package opt3.Model;
 
+// Account class for creating users
 public class Account {
     private boolean logedIn;
     private String username;

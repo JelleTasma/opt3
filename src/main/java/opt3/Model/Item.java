@@ -2,6 +2,7 @@ package opt3.Model;
 
 import java.util.ArrayList;
 
+// Item class for creating items and stores items, extends the two rent interfaces
 public class Item implements StartRent, EndRent {
     private String soort;
     private String name;
@@ -16,7 +17,7 @@ public class Item implements StartRent, EndRent {
     private String customer;
     private String stock;
 
-
+    // arraylist for storing the items
     public static final ArrayList<Item> items = new ArrayList<>();
 
     // make a new items in the constructor

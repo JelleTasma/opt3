@@ -28,36 +28,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f0f6e1d-787d-43a4-ac9b-005bc3260915" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/AddSortController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/AbstractFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/AccountFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/EndRent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/ItemSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/StartRent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/opt3/AddSort.fxml" afterDir="false" />
+    <list default="true" id="8f0f6e1d-787d-43a4-ac9b-005bc3260915" name="Default Changelist" comment="new code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/AddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/DetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/DetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/JavaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/JavaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/AuthenticationNormal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/AuthenticationNormal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/AbstractFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/AccountFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/AccountFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Authentication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/AuthenticationSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/AuthenticationSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Drill.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/EndRent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/EndRent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Truck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/opt3/Manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/opt3/Manage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JavaFXAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaFXAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/opt3/Manage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/opt3/Manage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/StartRent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/StartRent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652712932900</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new code">
+      <created>1654457055433</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654457055433</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,46 +298,46 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1654376650057" />
-    <state x="296" y="24" key="CommitChangelistDialog2" timestamp="1652712932663">
+    <state x="296" y="24" key="CommitChangelistDialog2" timestamp="1654457062788">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="296" y="24" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1652712932663" />
+    <state x="296" y="24" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1654457062788" />
     <state x="75" y="130" width="1240" height="770" key="DiffContextDialog" timestamp="1652778991547">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="75" y="130" width="1240" height="770" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1652778991547" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.25.1440.819@0.25.1440.819" timestamp="1652735930832" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1654456832963">
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1654457039415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1654456832963" />
+    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1654457039415" />
     <state width="1398" height="206" key="GridCell.Tab.0.bottom/0.25.1440.813@0.25.1440.813" timestamp="1652002045559" />
     <state width="1398" height="206" key="GridCell.Tab.0.bottom/0.25.1440.814@0.25.1440.814" timestamp="1652003174172" />
     <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.25.1440.815@0.25.1440.815" timestamp="1654191484131" />
     <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1652736099806" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1652469832123" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1654456832962">
+    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1654457039415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1654456832962" />
+    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1654457039415" />
     <state width="1398" height="206" key="GridCell.Tab.0.center/0.25.1440.813@0.25.1440.813" timestamp="1652002045557" />
     <state width="1398" height="206" key="GridCell.Tab.0.center/0.25.1440.814@0.25.1440.814" timestamp="1652003174171" />
     <state width="1398" height="244" key="GridCell.Tab.0.center/0.25.1440.815@0.25.1440.815" timestamp="1654191484130" />
     <state width="1398" height="260" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1652736099806" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1652469832122" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1654456832961">
+    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1654457039414">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1654456832961" />
+    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1654457039414" />
     <state width="1398" height="206" key="GridCell.Tab.0.left/0.25.1440.813@0.25.1440.813" timestamp="1652002045556" />
     <state width="1398" height="206" key="GridCell.Tab.0.left/0.25.1440.814@0.25.1440.814" timestamp="1652003174171" />
     <state width="1398" height="244" key="GridCell.Tab.0.left/0.25.1440.815@0.25.1440.815" timestamp="1654191484130" />
     <state width="1398" height="260" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1652736099806" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1652469832121" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1654456832962">
+    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1654457039415">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1654456832962" />
+    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1654457039415" />
     <state width="1398" height="206" key="GridCell.Tab.0.right/0.25.1440.813@0.25.1440.813" timestamp="1652002045558" />
     <state width="1398" height="206" key="GridCell.Tab.0.right/0.25.1440.814@0.25.1440.814" timestamp="1652003174172" />
     <state width="1398" height="244" key="GridCell.Tab.0.right/0.25.1440.815@0.25.1440.815" timestamp="1654191484130" />

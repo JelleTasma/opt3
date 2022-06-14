@@ -2,29 +2,22 @@ package opt3.Controller;
 
 import javafx.geometry.Insets;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.text.Font;
 import opt3.JavaApplication;
 import opt3.Model.Account;
 import opt3.Model.Login;
 import opt3.Model.Observer;
-import opt3.Model.User;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
-import java.util.Comparator;
 
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
-import javafx.stage.Modality;
-import javafx.scene.layout.VBox;
-
 
 public class LoginController {
     @FXML

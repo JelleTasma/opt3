@@ -1,7 +1,6 @@
 package opt3.Controller;
 
 import javafx.geometry.Insets;
-import javafx.scene.Node;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -13,7 +12,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
-import java.util.concurrent.atomic.AtomicReference;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

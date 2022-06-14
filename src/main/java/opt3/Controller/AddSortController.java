@@ -1,25 +1,10 @@
 package opt3.Controller;
 
-import javafx.geometry.Insets;
-import javafx.scene.Node;
-import javafx.scene.layout.HBox;
-import javafx.scene.text.Font;
-import javafx.scene.text.Text;
-import opt3.JavaApplication;
 import opt3.Model.*;
-
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.layout.AnchorPane;
-
 import java.io.IOException;
-import java.util.concurrent.atomic.AtomicReference;
-
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 import javafx.event.ActionEvent;
-import javafx.scene.layout.VBox;
 
 public class AddSortController {
     @FXML

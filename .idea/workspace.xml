@@ -28,16 +28,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f0f6e1d-787d-43a4-ac9b-005bc3260915" name="Default Changelist" comment="new code">
+    <list default="true" id="8f0f6e1d-787d-43a4-ac9b-005bc3260915" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/AbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/AbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/AccountFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/AccountFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Authentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/AuthenticationSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/AuthenticationSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/EndRent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/EndRent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Model/StartRent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Model/StartRent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/AddController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/AddSortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/AddSortController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/ManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/OverviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/OverviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/opt3/Controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/opt3/Controller/UserController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654457055433</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new code">
+      <created>1654536519207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654536519207</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,10 +305,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1654376650057" />
-    <state x="296" y="24" key="CommitChangelistDialog2" timestamp="1654457062788">
+    <state x="296" y="24" key="CommitChangelistDialog2" timestamp="1654536519044">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="296" y="24" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1654457062788" />
+    <state x="296" y="24" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1654536519044" />
     <state x="75" y="130" width="1240" height="770" key="DiffContextDialog" timestamp="1652778991547">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

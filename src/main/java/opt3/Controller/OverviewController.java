@@ -8,7 +8,6 @@ import javafx.scene.Parent;
 import javafx.scene.text.Font;
 import opt3.JavaApplication;
 import opt3.Model.Item;
-import opt3.Model.Login;
 import opt3.Model.User;
 
 import javafx.fxml.FXML;
@@ -16,18 +15,13 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.*;
 import javafx.util.Callback;
 
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
-import javafx.stage.Modality;
-import javafx.scene.layout.VBox;
 
 public class OverviewController {
 
